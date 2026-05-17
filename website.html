@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud Website</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('"C:\Users\Devri\OneDrive\Documents\KDU.jpg"');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        /* Section Container */
+        .section {
+            min-height: 45vh; /* Adjusted to fit the proportions of the printout */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            border-bottom: 5px solid #000; /* Distinct black divider lines like the image */
+            background: rgba(255, 255, 255, 0.4); /* Creates the translucent overlay effect */
+            backdrop-filter: blur(3px); /* Slightly softens the background image */
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        /* Typography & Headings */
+        h1, h2 {
+            color: #004080; /* Match the dark blue heading color */
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #111;
+        }
+
+        /* Navigation Bar inside each section */
+        .nav-links {
+            margin-bottom: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #004080;
+        }
+
+        /* Content Cards for About and Contact */
+        .card {
+            background: rgba(255, 255, 255, 0.85); /* Clean white opaque box */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 2px solid #ccc;
+        }
+
+        /* Logo styling for welcome section */
+        .logo {
+            max-width: 90px;
+            height: auto;
+            margin-top: 15px;
+            background: white;
+            padding: 5px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="home" class="section">
+        <h1>Welcome to My Cloud Website</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p><strong>This website is hosted on GitHub cloud platform.</strong></p>
+        <img src="https://en.namu.wiki/w/%EA%B2%BD%EB%8F%99%EB%8C%80%ED%95%99%EA%B5%90" alt="KDU Logo" class="logo">
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="card">
+            <img src=""C:\Users\Devri\OneDrive\Documents\ritesh.JPG"" alt="Profile Picture" class="profile-img">
+            <p><strong>Name:</strong> Devkota Ritesh</p>
+            <p><strong>Roll Number:</strong> 2417095</p>
+            <p style="margin-top: 10px;">This is my cloud computing practical lab website.</p>
+            <p>I created this website using HTML, CSS, GitHub, and GitHub Pages.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="card">
+            <p><strong>Email:</strong> riteshdev2468@email.com</p>
+            <p><strong>Phone:</strong> 010-0000-0000</p>
+            <p><strong>University:</strong> Kyungdong University</p>
+        </div>
+    </div>
+
+</body>
+</html>
